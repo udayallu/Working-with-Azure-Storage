@@ -75,7 +75,7 @@ In this exercise, you will create an Azure Storage account and use it to store f
 8. Open the data folder, and then click Paste to copy the product.txt file to this folder.
 9. Navigate back up to the root of the bigdata container, and select the products.txt file. Then click Delete, and when prompted to confirm the deletion, click Yes.
 10. Verify that the bigdata container now contains only a folder named data, which in turn contains files named customers.txt, products.txt, and reviews.txt.
-![alt text](https://github.com/udayallu/Working-with-Azure-Storage/blob/master/images/img12.PNG)
+![alt text](https://github.com/udayallu/Working-with-Azure-Storage/blob/master/images/img12.png)
 
 ## Exercise 2: Working with Azure Data Lake Store
 - Azure Data Lake Store is a storage service in Azure that is optimized for big data workloads. 
