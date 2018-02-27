@@ -75,6 +75,7 @@ In this exercise, you will create an Azure Storage account and use it to store f
 8. Open the data folder, and then click Paste to copy the product.txt file to this folder.
 9. Navigate back up to the root of the bigdata container, and select the products.txt file. Then click Delete, and when prompted to confirm the deletion, click Yes.
 10. Verify that the bigdata container now contains only a folder named data, which in turn contains files named customers.txt, products.txt, and reviews.txt.
+![alt text](https://github.com/udayallu/Working-with-Azure-Storage/blob/master/images/img12.PNG)
 
 ## Exercise 2: Working with Azure Data Lake Store
 - Azure Data Lake Store is a storage service in Azure that is optimized for big data workloads. 
@@ -84,6 +85,7 @@ In this exercise, you will provision Azure Data Lake Store and upload some files
 ### Provision Azure Data Lake Store
 To get started, you must provision Azure Data Lake Store.
 1. In the Microsoft Azure portal, in the Hub Menu (on the left edge of the page), click New. Then in the Storage menu, click **Data Lake Store**.
+![alt text](https://github.com/udayallu/Working-with-Azure-Storage/blob/master/images/img13.PNG)
 2. In the **New Data Lake Store blade**, enter the following settings, and then click Create:
 - Name: Enter a unique name for your storage account (and make a note of it!)
 - Resource group: Select Use existing and select the resource group you created previously.
@@ -91,17 +93,21 @@ To get started, you must provision Azure Data Lake Store.
 - Pricing: Pay-as-you-go
 - Encryption Settings: Enabled
 - Pin to dashboard: Unselected
+![alt text](https://github.com/udayallu/Working-with-Azure-Storage/blob/master/images/img14.PNG)
 3. At the top of the page, click Notifications and verify that deployment has started. Wait until your storage account has been created. This should take a few minutes.
-[]
 
 ### Upload Files to Azure Data Lake Store
 Now that you have provisioned Azure Data Lake Store, you can use the Data Explorer in the Azure Portal to upload files.
 1. In the Hub menu, click **All resources**, and then click your Data Lake Store.
 2. In the blade for your Data Lake Store, click **Data Explorer**.
+![alt text](https://github.com/udayallu/Working-with-Azure-Storage/blob/master/images/img15.PNG)
 3. In the Data Explorer blade, click **New Folder**. Then create a folder named **data**.
+![alt text](https://github.com/udayallu/Working-with-Azure-Storage/blob/master/images/img16.PNG)
 4. Click the data folder to open it.
 5. Click Folder Properties; and in the Properties blade, view the PATH property. This is the folder URL, and should be similar to adl://<your_account_name>.azuredatalakestore.net/data/
+![alt text](https://github.com/udayallu/Working-with-Azure-Storage/blob/master/images/img17.PNG)
 6. In the blade for the data folder, **click Upload**.
 7. In the Upload files blade, browse to the folder where you extracted the lab files for this course and view the contents of the data folder. Then select all the files it contains (hold the CTRL key to select multiple files) and click Add selected files to upload them to the data folder in your Azure Data Lake Store.
 8. After the files have been uploaded, close the Upload files blade and verify that the data folder in your **Azure Data Lake Store** now contains **customers.txt** and **reviews.txt**.
+![alt text](https://github.com/udayallu/Working-with-Azure-Storage/blob/master/images/img18.PNG)
 9. Click reviews.txt and view the preview of the data. Note that the tab-delimiter has been detected and the data is shown as a table with multiple columns.
